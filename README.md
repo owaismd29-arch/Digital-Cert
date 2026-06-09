@@ -1,23 +1,13 @@
 [![Java CI with Maven in Linux](https://github.com/owaismd29-arch/Digital-Cert/actions/workflows/maven.yml/badge.svg)](https://github.com/owaismd29-arch/Digital-Cert/actions/workflows/maven.yml)
-
 [![Java CI with Maven, Docker and SonarCloud in Linux](https://github.com/owaismd29-arch/Digital-Cert/actions/workflows/sonar.yml/badge.svg)](https://github.com/owaismd29-arch/Digital-Cert/actions/workflows/sonar.yml)
-
 [![Coverage Status](https://coveralls.io/repos/github/owaismd29-arch/Digital-Cert/badge.svg?branch=master)](https://coveralls.io/github/owaismd29-arch/Digital-Cert?branch=master)
-
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=owaismd29-arch_Digital-Cert&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=owaismd29-arch_Digital-Cert)
-
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=owaismd29-arch_Digital-Cert&metric=coverage)](https://sonarcloud.io/summary/new_code?id=owaismd29-arch_Digital-Cert)
-
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=owaismd29-arch_Digital-Cert&metric=bugs)](https://sonarcloud.io/summary/new_code?id=owaismd29-arch_Digital-Cert)
-
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=owaismd29-arch_Digital-Cert&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=owaismd29-arch_Digital-Cert)
-
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=owaismd29-arch_Digital-Cert&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=owaismd29-arch_Digital-Cert)
-
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=owaismd29-arch_Digital-Cert&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=owaismd29-arch_Digital-Cert)
-
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=owaismd29-arch_Digital-Cert&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=owaismd29-arch_Digital-Cert)
-
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=owaismd29-arch_Digital-Cert&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=owaismd29-arch_Digital-Cert)
 
 # Digital Certificate Management System
