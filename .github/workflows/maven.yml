@@ -37,6 +37,8 @@ jobs:
 
       - name: Build with Maven
         run: xvfb-run mvn verify -Pjacoco
+        env:
+          DOCKER_HOST: unix:///var/run/docker.sock
 
       - name: Run Coveralls Report
         run: mvn coveralls:report ${{ matrix.additional-maven-args }}
