@@ -36,9 +36,7 @@ jobs:
             ${{ runner.os }}-m2-
 
       - name: Build with Maven
-        run: mvn verify -Pjacoco
-        env:
-          DISPLAY: ':99'
+        run: xvfb-run mvn verify -Pjacoco -Pdocker
 
       - name: Run Coveralls Report
         if: ${{ secrets.COVERALLS_REPO_TOKEN != '' }}
