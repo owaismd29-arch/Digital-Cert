@@ -407,6 +407,16 @@
 								<exclude>**/CertificateControllerIT.java</exclude>
 							</excludes>
 						</configuration>
+						<executions>
+							<execution>
+								<id>e2e-tests</id>
+								<phase>none</phase>
+							</execution>
+							<execution>
+								<id>bdd-tests</id>
+								<phase>none</phase>
+							</execution>
+						</executions>
 					</plugin>
 				</plugins>
 			</build>
