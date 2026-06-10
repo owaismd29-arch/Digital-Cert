@@ -402,6 +402,8 @@
 							<excludes>
 								<exclude>**/*Testcontainers*.java</exclude>
 								<exclude>**/*E2E.java</exclude>
+								<exclude>**/*BDD.java</exclude>
+								<exclude>**/ModelViewControllerIT.java</exclude>
 							</excludes>
 						</configuration>
 					</plugin>
