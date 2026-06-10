@@ -33,7 +33,7 @@
 		<coveralls.version>4.3.0</coveralls.version>
 		<jaxb.version>2.3.1</jaxb.version>
 		<jacoco.version>0.8.7</jacoco.version>
-		<docker.plugin.version>0.34.1</docker.plugin.version>
+		<docker.plugin.version>0.40.2</docker.plugin.version>
 
 		<sonar.issue.ignore.multicriteria>e11,e12,e13,e14</sonar.issue.ignore.multicriteria>
 		<sonar.issue.ignore.multicriteria.e11.ruleKey>java:S117</sonar.issue.ignore.multicriteria.e11.ruleKey>
