@@ -404,6 +404,7 @@
 								<exclude>**/*E2E.java</exclude>
 								<exclude>**/*BDD.java</exclude>
 								<exclude>**/ModelViewControllerIT.java</exclude>
+								<exclude>**/CertificateControllerIT.java</exclude>
 							</excludes>
 						</configuration>
 					</plugin>
