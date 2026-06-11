@@ -1,4 +1,4 @@
-[![Java CI with Maven in Linux](https://github.com/owaismd29-arch/Digital-Cert/actions/workflows/maven.yml/badge.svg?branch=master&v=2)](https://github.com/owaismd29-arch/Digital-Cert/actions/workflows/maven.yml)
+[![Java CI with Maven in Linux](https://github.com/owaismd29-arch/Digital-Cert/actions/workflows/maven.yml/badge.svg)](https://github.com/owaismd29-arch/Digital-Cert/actions/workflows/maven.yml)
 [![Java CI with Maven, Docker and SonarCloud in Linux](https://github.com/owaismd29-arch/Digital-Cert/actions/workflows/sonar.yml/badge.svg)](https://github.com/owaismd29-arch/Digital-Cert/actions/workflows/sonar.yml)
 [![Coverage Status](https://coveralls.io/repos/github/owaismd29-arch/Digital-Cert/badge.svg?branch=master)](https://coveralls.io/github/owaismd29-arch/Digital-Cert?branch=master)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=owaismd29-arch_Digital-Cert&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=owaismd29-arch_Digital-Cert)
