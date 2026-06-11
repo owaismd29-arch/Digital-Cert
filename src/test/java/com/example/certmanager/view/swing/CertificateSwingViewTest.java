@@ -109,7 +109,7 @@ public class CertificateSwingViewTest extends AssertJSwingJUnitTestCase {
 						.addElement(new Certificate("1", "Java SE", "Owais", "Oracle", 2024)));
 		window.list("certificateList").selectItem(0);
 		JButtonFixture deleteButton = window.button(JButtonMatcher.withText("Delete Certificate"));
-		deleteButton.requireEnabled();
+		Awaitility.await().atMost(5, TimeUnit.SECONDS).untilAsserted(deleteButton::requireEnabled);
 		window.list("certificateList").clearSelection();
 		Awaitility.await().atMost(5, TimeUnit.SECONDS).untilAsserted(deleteButton::requireDisabled);
 	}
