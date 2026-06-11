@@ -293,7 +293,7 @@ public class CertificateSwingView extends JFrame implements CertificateView {
 
 	@Override
 	public void showAllCertificates(List<Certificate> certificates) {
-		certificates.stream().forEach(listCertificateModel::addElement);
+		certificates.forEach(listCertificateModel::addElement);
 	}
 
 	@Override
