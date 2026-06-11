@@ -2,6 +2,7 @@ package com.example.certmanager.view.swing;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.timeout;
 
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
@@ -193,10 +194,10 @@ public class CertificateSwingViewTest extends AssertJSwingJUnitTestCase {
 		window.textBox("issuedToTextBox").enterText("Owais");
 		window.textBox("issuedByTextBox").enterText("Oracle");
 		window.textBox("yearTextBox").enterText("2024");
+		window.button(JButtonMatcher.withText("Add Certificate")).requireEnabled();
 		window.button(JButtonMatcher.withText("Add Certificate")).click();
-		Awaitility.await().atMost(5, TimeUnit.SECONDS).untilAsserted(() ->
-				verify(certificateController)
-						.newCertificate(new Certificate("1", "Java SE", "Owais", "Oracle", 2024)));
+		verify(certificateController, timeout(5000))
+				.newCertificate(new Certificate("1", "Java SE", "Owais", "Oracle", 2024));
 	}
 
 	@Test @GUITest
