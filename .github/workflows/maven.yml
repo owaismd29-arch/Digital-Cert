@@ -7,31 +7,23 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        include:
-          - java: 11
-            additional-maven-args: >-
-              -Pcoveralls
-              -DrepoToken=${{ secrets.COVERALLS_REPO_TOKEN }}
-              -DpullRequest=${{ github.event.pull_request.number }}
 
-    name: Build with Java ${{ matrix.java }} on Linux
+    name: Build with Java 11 on Linux
 
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up JDK ${{ matrix.java }}
+      - name: Set up JDK 11
         uses: actions/setup-java@v3
         with:
-          java-version: ${{ matrix.java }}
+          java-version: 11
           distribution: 'temurin'
 
       - name: Cache Maven packages
         uses: actions/cache@v3
         with:
           path: ~/.m2
-          key: ${{ runner.os }}-m2-jdk${{ matrix.java }}-${{ hashFiles('**/pom.xml', '**/*.yml') }}
+          key: ${{ runner.os }}-m2-jdk11-${{ hashFiles('**/pom.xml', '**/*.yml') }}
           restore-keys: |
             ${{ runner.os }}-m2-
 
@@ -39,7 +31,6 @@ jobs:
         run: xvfb-run mvn verify -Pjacoco -Pdocker
 
       - name: Run Coveralls Report
-        if: ${{ secrets.COVERALLS_REPO_TOKEN != '' }}
-        run: mvn coveralls:report ${{ matrix.additional-maven-args }}
+        run: mvn coveralls:report -Pcoveralls -DrepoToken=${{ secrets.COVERALLS_REPO_TOKEN }} -DpullRequest=${{ github.event.pull_request.number }}
         env:
           COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
