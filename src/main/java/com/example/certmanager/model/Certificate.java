@@ -1,7 +1,7 @@
 package com.example.certmanager.model;
 
 import java.util.Objects;
-
+// Certificate entity representing a digital certificate record
 public class Certificate {
 
 	private String id;
