@@ -9,7 +9,6 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=owaismd29-arch_Digital-Cert&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=owaismd29-arch_Digital-Cert)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=owaismd29-arch_Digital-Cert&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=owaismd29-arch_Digital-Cert)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=owaismd29-arch_Digital-Cert&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=owaismd29-arch_Digital-Cert)
-
 # Digital Certificate Management System
 
 A CRUD-based Digital Certificate Management System built with Java, following the MVC architecture pattern, backed by MongoDB.
