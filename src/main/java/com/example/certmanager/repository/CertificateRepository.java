@@ -1,3 +1,4 @@
+// Repository interface for CRUD operations
 package com.example.certmanager.repository;
 
 import java.util.List;
