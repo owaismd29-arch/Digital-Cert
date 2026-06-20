@@ -1,3 +1,4 @@
+// Application entry point with Picocli
 package com.example.certmanager.app.swing;
 
 import java.awt.EventQueue;
