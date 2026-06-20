@@ -1,3 +1,4 @@
+// Controller with synchronized CRUD operations
 package com.example.certmanager.controller;
 
 import com.example.certmanager.model.Certificate;
