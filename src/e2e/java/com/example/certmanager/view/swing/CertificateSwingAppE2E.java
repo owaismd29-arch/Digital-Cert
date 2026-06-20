@@ -1,3 +1,4 @@
+// End-to-end tests
 package com.example.certmanager.view.swing;
 
 import static org.assertj.core.api.Assertions.*;
