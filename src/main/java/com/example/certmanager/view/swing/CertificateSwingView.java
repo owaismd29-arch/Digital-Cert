@@ -1,3 +1,4 @@
+// Swing GUI view implementation
 package com.example.certmanager.view.swing;
 
 import java.awt.GridBagConstraints;
