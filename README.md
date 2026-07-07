@@ -30,11 +30,6 @@ A CRUD-based Digital Certificate Management System built with Java, following th
 - **Update** — Modify an existing certificate record
 - **Delete** — Remove a certificate record
 
-## Prerequisites
-
-- Java 8+
-- Maven
-- Docker
 
 ## Run with Docker
 
