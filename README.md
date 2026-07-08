@@ -30,24 +30,13 @@ A CRUD-based Digital Certificate Management System built with Java, following th
 - **Update** — Modify an existing certificate record
 - **Delete** — Remove a certificate record
 
+The project implements a comprehensive multi-layer testing approach:
 
-## Run with Docker
+- **Unit Tests** — Controller, Repository, and Swing View tested in isolation using Mockito and in-memory MongoDB
+- **Integration Tests** — Controller and Repository tested with real MongoDB running in Docker via fabric8 plugin and Testcontainers
+- **End-to-End Tests** — Full application tested via AssertJ Swing with real MongoDB in Docker
+- **BDD Tests** — Cucumber feature files with Given/When/Then scenarios
+- **Race Condition Tests** — Thread safety verified with 10 concurrent threads
 
-```bash
-docker-compose up -d
-mvn clean package
-java -jar target/certmanager-0.0.1-SNAPSHOT.jar
-```
-
-## Run Tests
-
-```bash
-# Unit Tests + IT + E2E + BDD
-mvn verify
-
-# With Coverage
-mvn verify -Pjacoco
-
-# Mutation Testing
-mvn verify -Pmutation-testing
-```
+Acknowledgments
+Thanks to Professor Lorenzo BETTINI.
