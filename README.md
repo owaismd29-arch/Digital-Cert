@@ -38,5 +38,5 @@ The project implements a comprehensive multi-layer testing approach:
 - **BDD Tests** — Cucumber feature files with Given/When/Then scenarios
 - **Race Condition Tests** — Thread safety verified with 10 concurrent threads
 
-Acknowledgments
+## Acknowledgments
 Thanks to Professor Lorenzo BETTINI.
